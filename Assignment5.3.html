@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student</title>
+</head>
+<body>
+	<h1>student deatils</h1>
+
+	<div id="demo">
+		
+
+	</div>
+	<script>
+    var student={
+    	studentname:"Rajat Patra",
+    	DOB:"6th jun 1995",
+    	Skill:"front end web dev",
+    	
+    	address:{
+    		state:"Odisha",
+    		city:"Cuttack",
+    		country:"INDIA",
+    		},
+    	showuserinfo:function()
+    	{
+            return this.studentname+ "--" +this.DOB+ "--" +this.Skill;  
+    	}
+    };
+     
+       student.eyecolor="black";
+       student.mothername="Priyanka";
+
+        console.log(student);
+
+  delete student.mothername;
+  console.log(student);
+
+      console.log(student.showuserinfo());
+      console.log(student.address.city);
+  console.log("====================")
+    for(var key in student)
+    {
+    	console.log(student[key]);
+    }
+	</script>
+</body>
+</html>
